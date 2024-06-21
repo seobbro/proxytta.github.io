@@ -129,11 +129,11 @@
     <div class="hero-body">
       <video poster="" id="tree" autoplay controls muted loop height="100%">
         <!-- Your video here -->
-        <source src="static/videos/banner_video.mp4"
+        <source src="static/videos/teaser_speed_adjusted_final.mp4"
         type="video/mp4">
       </video>
       <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
+        We present ProxyTTA, an online test-time adaptation method for multimodal (image + range) depth estimation to bridge the domain gap.
       </h2>
     </div>
   </div>
@@ -165,30 +165,45 @@
       <div id="results-carousel" class="carousel results-carousel">
        <div class="item">
         <!-- Your image here -->
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
+        <img src="static/images/Picture1.jpg" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
-          First image description.
+          Model sensitivity to input modalities. Depth completion networks have a high reliance on sparse depth modality. Performing inference in a novel domain without the RGB image, i.e., using just sparse depth as input, can improve over using both data modalities.
+
         </h2>
       </div>
       <div class="item">
         <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
+        <img src="static/images/Picture2.jpg" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
-          Second image description.
+          Model sensitivity to input modalities.} While utilizing both sparse depth and image as input, the best performance is achieved in the source domain (VOID). Yet, forgoing the image in the test domain (NYUv2) often yields lower error than using both as input.
         </h2>
       </div>
       <div class="item">
         <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
+        <img src="static/images/Picture3.jpg" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
-         Third image description.
+          Overview. (a) The pretraining stage integrates an adaptation layer into a pretrained encoder and pretrains the adaptation layer on the source dataset. (b) The preparation stage learns the proxy mapping of features encoding sparse depth to those encoding both inputs. (c) The adaptation stage deploys the model to the target domain and updates the adaptation layer by leveraging proxy embeddings as guidance.
        </h2>
      </div>
      <div class="item">
       <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
+      <img src="static/images/Picture4.jpg" alt="MY ALT TEXT"/>
       <h2 class="subtitle has-text-centered">
-        Fourth image description.
+        Qualitative result in Indoor adaptation scenario (VOID to NYUv2).
+      </h2>
+    </div>
+    <div class="item">
+      <!-- Your image here -->
+      <img src="static/images/Picture5.jpg" alt="MY ALT TEXT"/>
+      <h2 class="subtitle has-text-centered">
+        Qualitative result in Outdoor adaptation scenario (KITTI to nuScenes).
+      </h2>
+    </div>
+    <div class="item">
+      <!-- Your image here -->
+      <img src="static/images/Picture6.jpg" alt="MY ALT TEXT"/>
+      <h2 class="subtitle has-text-centered">
+        Qualitative result in Outdoor adaptation scenario under adverse weather (KITTI to Waymo).
       </h2>
     </div>
   </div>
@@ -211,7 +226,7 @@
           
           <div class="publication-video">
             <!-- Youtube embed code here -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/watch?v=FmfCBVYno1k" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
           </div>
         </div>
       </div>
@@ -222,36 +237,7 @@
 
 
 <!-- Video carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+
 <!-- End video carousel -->
 
 
@@ -278,7 +264,12 @@
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
-      <pre><code>BibTex Code Here</code></pre>
+      <pre><code>@article{park2024test,
+        title={Test-Time Adaptation for Depth Completion},
+        author={Park, Hyoungseob and Gupta, Anjali and Wong, Alex},
+        journal={arXiv preprint arXiv:2402.03312},
+        year={2024}
+      }</code></pre>
     </div>
 </section>
 <!--End BibTex citation -->
